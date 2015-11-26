@@ -72,16 +72,16 @@ ul,li {
 	#scroller div{
 	float:left;
 	display:block;
-	width:21%;
-	height:20%;
+	width:18%;
+	height:18%;
 	margin-top:2%;
 	background:none;
 	font-size: 100%;
-	margin-left:0%;
+	margin-left:5%;
 	background-position:top;
 
 }
-#scroller{margin-left:6%;}
+#scroller{margin-left:0%;}
 #wrapper {
 	position: absolute;
 	z-index: 1;
