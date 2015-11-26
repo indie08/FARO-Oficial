@@ -140,7 +140,6 @@ footer{
 	background:  rgba(0, 0, 0, .95);
 	position:fixed;
 	bottom:0;
-	z-index:3;		
 }
 .header-1 {
 	position: absolute;
@@ -158,9 +157,9 @@ footer{
 
 }
 footer div input{
-	margin-left:18px;
+	margin-left:20%;
 	width:40%;
-	height:65%;
+	height:50%;
 	margin-top:13px;
 	outline:none;
 }
