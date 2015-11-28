@@ -84,8 +84,8 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
     <div class="center">
 <div class="cartelera">
 			<div id="sliderA" class="slider">
-				<div id="esp1"><a href="uno.html"><img src="http://www.farodeoriente.org/prueba/uno.jpg"/></a></div>
-				<div id="esp2"><a href="dos.html"><img src="http://www.farodeoriente.org/prueba/dos.jpg"/></a></div>
+				<div ><a id="esp1" href="uno.html"></a></div>
+				<div ><a id="esp2" href="dos.html"></a></div>
 				<div id="esp3"><a href="tres.html"><img src="http://www.farodeoriente.org/prueba/tres.jpg"/></a></div>
 				<div id="esp4"><a href="cuatro.html"><img src="http://www.farodeoriente.org/prueba/cuatro.jpg"/></a></div>
 				<div id="esp5"><a href="cinco.html"><img src="http://www.farodeoriente.org/prueba/cinco.jpg"/></a></div>
@@ -159,6 +159,13 @@ $(document).ready(function(){
    var refreshId = setInterval('load-async', 3000);
    $.ajaxSetup({ cache: false });
  });
+ 
+ $(document).ready(function(){
+      $("#esp1").load("http://www.farodeoriente.org/prueba/uno.jpg");
+   });
+ $(document).ready(function(){
+      $("#esp2").load("http://www.farodeoriente.org/prueba/tres.jpg");
+   });
 </script>
 </body>
 </html>
