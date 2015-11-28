@@ -17,7 +17,6 @@
 <script type="text/javascript" src="js/iscrolla.js"></script>
 <script src="js/jquery-1.9.1.min.js"></script>
 <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-<script type="text/javascript" src="js/ajax.js"></script>
 <script type="text/javascript" src="js/fastclick.js"></script>
 
     <script src="js/jquery.excoloSlider.js"></script>
@@ -156,6 +155,11 @@ speed: 100
             $("#sliderA").excoloSlider();
         });
     </script>
-
+<script type="text/javascript">
+$(document).ready(function(){
+   var refreshId = setInterval('load-async', 3000);
+   $.ajaxSetup({ cache: false });
+ });
+</script>
 </body>
 </html>
