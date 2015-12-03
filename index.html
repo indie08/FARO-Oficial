@@ -83,15 +83,11 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 <div class="page">
     <div class="center">
 <div class="cartelera">
-<div id="sliderA" class="slider">
-				<div id="esp1"><a href="uno.html"><img src="http://www.farodeoriente.org/prueba/uno.jpg"/></a></div>
-				<div id="esp2"><a href="dos.html"><img src="http://www.farodeoriente.org/prueba/dos.jpg"/></a></div>
-				<div id="esp3"><a href="tres.html"><img src="http://www.farodeoriente.org/prueba/inscripciones.jpg"/></a></div>
 
 			</div>
 
 
-</div>
+
             <div class="header-1"><div id="header-2"><h3>Cartelera</h3></div></div>
 <div id="wrapper">
 	<div id="scroller">
@@ -147,12 +143,10 @@ speed: 100
 
 
 <script type="text/javascript">
-$(document).ready(function(){
-   var refreshId = setInterval('load-async', 3000);
-   $.ajaxSetup({ cache: false });
- });
  
- 
+ $(document).ready(function(){
+      $(".cartelera").load("http://www.farodeoriente.org/prueba/slider.html");
+   });
 </script>
 
 </body>
